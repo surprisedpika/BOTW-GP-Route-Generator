@@ -1,0 +1,126 @@
+{
+  "start": {
+    "bombs": 83.43,
+    "magnesis": 92,
+    "cryonis": 96.9,
+    "stasis": 78.6,
+    "rotaOoh": null
+  },
+  "interiors": {
+    "bombs": {
+      "bombs": 49.07,
+      "none": 49.07
+    },
+    "stasis": {
+      "bombs": 46.57,
+      "stasis": 62.97,
+      "none": 62.97
+    },
+    "cryonis": {
+      "bombs": 45.27,
+      "none": 53.37
+    },
+    "magnesis": {
+      "bombs": 51.73,
+      "stasis": 62.03,
+      "none": 73.5
+    },
+    "rotaOoh": {
+      "bombs": 35,
+      "none": 31.57
+    }
+  },
+  "end": {
+    "bombs": {
+      "none": 19.47
+    },
+    "stasis": {
+      "none": 18.73
+    },
+    "cryonis": {
+      "none": 20.07
+    },
+    "magnesis": {
+      "none": 32.6
+    },
+    "rotaOoh": {
+      "none": null
+    }
+  },
+
+  "bombs": {
+    "magnesis": {
+      "none": 23.37
+    },
+    "stasis": {
+      "none": 57.37
+    },
+    "cryonis": {
+      "none": null
+    },
+    "rotaOoh": {
+      "none": null
+    }
+  },
+  "magnesis": {
+    "bombs": {
+      "stasis": 33.67,
+      "none": 41.87
+    },
+    "cryonis": {
+      "bombs": 46.7,
+      "none": 50
+    },
+    "stasis": {
+      "none": 44.77
+    },
+    "rotaOoh": {
+      "none": null
+    }
+  },
+  "cryonis": {
+    "bombs": {
+      "none": 38.67
+    },
+    "magnesis": {
+      "none": 29.17
+    },
+    "stasis": {
+      "none": 27.57
+    },
+    "rotaOoh": {
+      "none": 50
+    }
+  },
+  "stasis": {
+    "bombs": {
+      "none": 40
+    },
+    "magnesis": {
+      "bombs": 35.73,
+      "none": null
+    },
+    "cryonis": {
+      "bombs": 33.53,
+      "none": 40.47
+    },
+    "rotaOoh": {
+      "none": null
+    }
+  },
+  "rotaOoh": {
+    "bombs": {
+      "none": 35
+    },
+    "magnesis": {
+      "bombs": 32.2,
+      "none": null
+    },
+    "cryonis": {
+      "none": null
+    },
+    "stasis": {
+      "none": null
+    }
+  }
+}
