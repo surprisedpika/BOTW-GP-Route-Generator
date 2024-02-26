@@ -136,8 +136,7 @@ const getAllRoutes = (data: Readonly<Data>) => {
         return;
       }
 
-      //@ts-expect-error
-      const exteriorTimes = data[mostRecentShrine][shrine] as TimeData;
+      const exteriorTimes = data[mostRecentShrine][shrine as never] as TimeData;
       const exteriorTime = getTime(exteriorTimes, hasBombs, hasStasis);
 
       if (exteriorTime === null) {
