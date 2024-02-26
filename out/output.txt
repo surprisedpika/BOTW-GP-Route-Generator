@@ -17,4 +17,10 @@
 17 | cryonis, magnesis, stasis, bombs | 464.22
 18 | cryonis, magnesis, bombs, stasis | 466.55
 19 | magnesis, stasis, cryonis, bombs | 474.29
-20 | magnesis, cryonis, bombs, stasis | 479.28
+20 | bombs, cryonis, magnesis, stasis | 478.74
+21 | magnesis, cryonis, bombs, stasis | 479.28
+22 | bombs, cryonis, stasis, magnesis | 481.97
+23 | bombs, cryonis, rotaOoh, magnesis | 485.87
+24 | stasis, bombs, cryonis, magnesis | 494.41
+25 | magnesis, bombs, cryonis, stasis | 504.58
+26 | magnesis, stasis, bombs, cryonis | 532.65
