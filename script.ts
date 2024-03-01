@@ -5,6 +5,7 @@ const AllShrines = [
   "bombs",
   "rotaOoh",
 ] as const;
+
 type ShrineName = (typeof AllShrines)[number];
 type Runes = "stasis" | "bombs";
 
@@ -49,6 +50,7 @@ const debug: any[] = [];
 const log = (...data: any[]) => {
   debug.push(data.join(" "));
 };
+
 const getAllRoutes = (data: Readonly<Data>) => {
   const out: Route[] = [];
 
