@@ -10,7 +10,7 @@ type ShrineName = (typeof AllShrines)[number];
 type Runes = "stasis" | "bombs";
 
 type Route = {
-  shrines: string[];
+  shrines: ShrineName[];
   time: number;
 };
 
@@ -69,9 +69,11 @@ const getAllRoutes = (data: Readonly<Data>) => {
     ) {
       if (time !== null) {
         if (times.bombs < time) {
+          // If bombs is the fastest time
           time = times.bombs;
         }
       } else {
+        // Or if time is not currently defined
         time = times.bombs;
       }
     }
@@ -84,9 +86,11 @@ const getAllRoutes = (data: Readonly<Data>) => {
     ) {
       if (time !== null) {
         if (times.stasis < time) {
+          // If stasis is the fastest time
           time = times.stasis;
         }
       } else {
+        // Or if time is not currently defined
         time = times.stasis;
       }
     }
@@ -128,12 +132,13 @@ const getAllRoutes = (data: Readonly<Data>) => {
 
     const shrineData = data[mostRecentShrine];
     Object.entries(shrineData).forEach(([_shrine, time]) => {
+      const shrine = _shrine as ShrineName;
       if (time === null) {
         log(
           "Missing data! Cannot complete route:",
-          [...shrines, _shrine].join(", "),
+          [...shrines, shrine].join(", "),
           "due to time of shrine:",
-          _shrine,
+          shrine,
           "being null, with bombs rune:",
           hasBombs,
           "and stasis rune:",
@@ -141,7 +146,6 @@ const getAllRoutes = (data: Readonly<Data>) => {
         );
         return;
       }
-      const shrine = _shrine as ShrineName;
       if (shrines.includes(shrine)) {
         log("Invalid route:", [...shrines, shrine].join(", "));
         return;
