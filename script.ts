@@ -57,13 +57,21 @@ const getAllRoutes = (data: Readonly<Data>) => {
     hasBombs: boolean,
     hasStasis: boolean
   ): number | null => {
+    let time = times.none;
+
     if (
       hasBombs &&
       times.hasOwnProperty("bombs") &&
       times.bombs !== null &&
       times.bombs !== undefined
     ) {
-      return times.bombs;
+      if (time !== null) {
+        if (times.bombs < time) {
+          time = times.bombs;
+        }
+      } else {
+        time = times.bombs;
+      }
     }
 
     if (
@@ -72,14 +80,15 @@ const getAllRoutes = (data: Readonly<Data>) => {
       times.stasis !== null &&
       times.stasis !== undefined
     ) {
-      return times.stasis;
+      if (time !== null) {
+        if (times.stasis < time) {
+          time = times.stasis;
+        }
+      } else {
+        time = times.stasis;
+      }
     }
-
-    if (times.none !== null) {
-      return times.none;
-    }
-
-    return null;
+    return time;
   };
 
   const propagateRoute = (route: Readonly<Route>) => {
