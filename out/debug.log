@@ -66,7 +66,9 @@ Missing data! Cannot complete route: cryonis, magnesis, rotaOoh Due to missing e
 Invalid route: cryonis, stasis, bombs, stasis
 Invalid route: cryonis, stasis, bombs, cryonis
 Missing data! Cannot complete route: cryonis, stasis, bombs, rotaOoh Due to missing exterior data going from bombs to rotaOoh with bomb rune: true and stasis rune: true
-Missing data! Cannot complete route: cryonis, stasis, magnesis Due to missing exterior data going from stasis to magnesis with bomb rune: false and stasis rune: true
+Invalid route: cryonis, stasis, magnesis, cryonis
+Invalid route: cryonis, stasis, magnesis, stasis
+Missing data! Cannot complete route: cryonis, stasis, magnesis, rotaOoh Due to missing exterior data going from magnesis to rotaOoh with bomb rune: false and stasis rune: true
 Invalid route: cryonis, stasis, cryonis
 Missing data! Cannot complete route: cryonis, stasis, rotaOoh Due to missing exterior data going from stasis to rotaOoh with bomb rune: false and stasis rune: true
 Invalid route: cryonis, rotaOoh, bombs, cryonis
@@ -81,7 +83,13 @@ Invalid route: stasis, bombs, stasis
 Invalid route: stasis, bombs, cryonis, bombs
 Invalid route: stasis, bombs, cryonis, stasis
 Missing data! Cannot complete route: stasis, bombs, rotaOoh Due to missing exterior data going from bombs to rotaOoh with bomb rune: true and stasis rune: true
-Missing data! Cannot complete route: stasis, magnesis Due to missing exterior data going from stasis to magnesis with bomb rune: false and stasis rune: true
+Invalid route: stasis, magnesis, bombs, magnesis
+Invalid route: stasis, magnesis, bombs, stasis
+Missing data! Cannot complete route: stasis, magnesis, bombs, rotaOoh Due to missing exterior data going from bombs to rotaOoh with bomb rune: true and stasis rune: true
+Invalid route: stasis, magnesis, cryonis, magnesis
+Invalid route: stasis, magnesis, cryonis, stasis
+Invalid route: stasis, magnesis, stasis
+Missing data! Cannot complete route: stasis, magnesis, rotaOoh Due to missing exterior data going from magnesis to rotaOoh with bomb rune: false and stasis rune: true
 Invalid route: stasis, cryonis, bombs, stasis
 Invalid route: stasis, cryonis, bombs, cryonis
 Missing data! Cannot complete route: stasis, cryonis, bombs, rotaOoh Due to missing exterior data going from bombs to rotaOoh with bomb rune: true and stasis rune: true
