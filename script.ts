@@ -101,7 +101,7 @@ const getAllRoutes = (data: Readonly<Data>) => {
     const shrines = route.shrines;
 
     if (isNaN(route.time)) {
-      log("Time is NaN in route:", route.shrines.join(", "));
+      log("Time is NaN in route:", route.shrines.join(", "), "This indicates an issue with data.json");
       return;
     }
 
@@ -218,21 +218,20 @@ const getAllRoutes = (data: Readonly<Data>) => {
   };
 
   Object.entries(data.start).forEach(([_shrine, time]) => {
+    const shrine = _shrine as ShrineName;
     if (time === null) {
-      log("Missing start data for shrine:", _shrine);
+      log("Missing start data for shrine:", shrine);
       return;
     }
-    const shrine = _shrine as ShrineName;
     const interiorTime = data.interiors[shrine].none;
     if (interiorTime === null) {
-      log("Missing interior data for shrine:", _shrine);
+      log("Missing interior data for shrine:", shrine);
       return;
     }
     const route: Route = {
       shrines: [shrine],
       time: time + interiorTime,
     };
-
     propagateRoute(route);
   });
 
